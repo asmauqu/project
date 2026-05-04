@@ -1,0 +1,15 @@
+C:\Users\t\Desktop\project_B\code\src\main\java\taskmanager\api\SchedulePlanner.java
+C:\Users\t\Desktop\project_B\code\src\main\java\taskmanager\api\TaskManager.java
+C:\Users\t\Desktop\project_B\code\src\main\java\taskmanager\api\TaskService.java
+C:\Users\t\Desktop\project_B\code\src\main\java\taskmanager\exception\InvalidTaskException.java
+C:\Users\t\Desktop\project_B\code\src\main\java\taskmanager\exception\TaskNotFoundException.java
+C:\Users\t\Desktop\project_B\code\src\main\java\taskmanager\exception\WeatherAPIException.java
+C:\Users\t\Desktop\project_B\code\src\main\java\taskmanager\impl\DefaultSchedulePlanner.java
+C:\Users\t\Desktop\project_B\code\src\main\java\taskmanager\impl\DefaultTaskManager.java
+C:\Users\t\Desktop\project_B\code\src\main\java\taskmanager\impl\DefaultTaskManagerBuilder.java
+C:\Users\t\Desktop\project_B\code\src\main\java\taskmanager\impl\DefaultTaskService.java
+C:\Users\t\Desktop\project_B\code\src\main\java\taskmanager\MainApp.java
+C:\Users\t\Desktop\project_B\code\src\main\java\taskmanager\model\ScheduleRecommendation.java
+C:\Users\t\Desktop\project_B\code\src\main\java\taskmanager\model\Task.java
+C:\Users\t\Desktop\project_B\code\src\main\java\taskmanager\model\WeatherForecast.java
+C:\Users\t\Desktop\project_B\code\src\main\java\taskmanager\ui\SmartTaskManagerFrame.java

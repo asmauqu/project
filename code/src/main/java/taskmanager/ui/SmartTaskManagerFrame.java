@@ -76,7 +76,7 @@ public class SmartTaskManagerFrame extends JFrame {
             
             Task task = loadedTasks.get(row);
             statusLabel.setText(" Analyzing...");
-            taskManager.evaluateTasks(task, "Jeddah")
+            taskManager.evaluateTasks(task, "Colombo")
                 .subscribeOn(Schedulers.boundedElastic())
                 .subscribe(f -> SwingUtilities.invokeLater(() -> {
                     tableModel.setValueAt("Optimal", row, 3);

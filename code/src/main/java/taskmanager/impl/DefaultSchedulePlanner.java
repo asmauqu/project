@@ -44,6 +44,7 @@ public class DefaultSchedulePlanner implements SchedulePlanner {
     public Mono<List<ScheduleRecommendation>> suggestScheduleForLocation(
             List<Task> tasks,
             String location) {
+        // Default static forecast for testing
         WeatherForecast forecast = new WeatherForecast(
                 location,
                 LocalDateTime.now(),
@@ -65,19 +66,18 @@ public class DefaultSchedulePlanner implements SchedulePlanner {
             WeatherForecast forecast) {
         return tasks.stream().map(task -> {
             String advice = "Weather conditions are optimal for this task.";
-            boolean isOptimal = true;
-
+            
+            // Logic to determine advice based on weather sensitivity
             if (task.weatherSensitive()) {
                 if (forecast.precipitationProbability() > 0.6) {
-                    advice = "⚠️ High Rain Risk: Consider rescheduling or moving indoors.";
-                    isOptimal = false;
+                    advice = "Postpone: High Rain Risk. Consider moving indoors.";
                 } else if (forecast.temperatureCelsius() > 40) {
-                    advice = "🔥 Extreme Heat Warning: Avoid outdoor activity.";
-                    isOptimal = false;
+                    advice = "Postpone: Extreme Heat Warning. Avoid outdoor activity.";
                 }
             }
 
-            return new ScheduleRecommendation(task, forecast, advice, isOptimal);
+            // Updated to match the 2-parameter record constructor required by the skeleton
+            return new ScheduleRecommendation(task, advice);
         }).collect(Collectors.toList());
     }
 }
